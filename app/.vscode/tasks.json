@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "App Normal",
+            "type": "shell",
+            "command": "./exec",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "App Valgrind",
+            "type": "shell",
+            "command": "./vexec",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "App Build",
+            "type": "shell",
+            "command": "./build",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}

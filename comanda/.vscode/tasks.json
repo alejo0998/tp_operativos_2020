@@ -1,0 +1,29 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Comanda Normal",
+            "type": "shell",
+            "command": "./exec",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Comanda Valgrind",
+            "type": "shell",
+            "command": "./vexec",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Comanda Build",
+            "type": "shell",
+            "command": "./build",
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}

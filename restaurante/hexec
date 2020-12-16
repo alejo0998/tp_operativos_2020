@@ -1,0 +1,19 @@
+#!/bin/bash
+FILE=restaurante
+
+# Ejecuto exec de las shared
+./../shared/exec
+
+if [[ ! -d bin ]]; then
+    mkdir bin
+fi
+make bin/$FILE
+
+if [[ ! -e cfg/$FILE.log ]]; then
+    mkdir cfg
+    touch cfg/$FILE.log
+fi
+
+if test -f "./bin/$FILE"; then
+    valgrind --tool=helgrind ./bin/$FILE
+fi
